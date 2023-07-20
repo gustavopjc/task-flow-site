@@ -1,25 +1,41 @@
-# task-flow-site
+# ProdTask
 
-This template should help get you started developing with Vue 3 in Vite.
+ProdTask is a robust project management and productivity tool that combines the power of Kanban with time tracking. This tool was developed using Nest JS and Vue.
 
-## Recommended IDE Setup
+## Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### Task Creation and Management
 
-## Type Support for `.vue` Imports in TS
+Users can create and manage tasks, moving them through different stages (To Do, In Progress, Done) on a Kanban board. Each task has a title, description, due date, and priority.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+### Time Tracking
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+ProdTask has a built-in stopwatch for each task, allowing users to record the time they spend on each task. Manual time entry is also supported.
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+### Productivity Analysis
 
-## Customize configuration
+Time tracking data are used to generate reports and charts, providing users with a detailed view of how they are spending their time and where they can improve their productivity.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+### Team Integration
+
+Users can invite others to join their projects. Tasks can be assigned to team members and everyone can see each other's progress.
+
+### Notifications and Reminders
+
+The notification system alerts users about tasks nearing due or changes in task status. Real-time notifications are implemented using WebSockets.
+
+### Calendar Integration
+
+Tasks with due dates can be synced with a calendar, using the Google Calendar API or another calendar API.
+
+### Points/Rewards System
+
+To make the app more engaging, a rewards system has been implemented. Users earn points for completing tasks, which can be viewed on a leaderboard or exchanged for virtual rewards.
+
+## Contact
+
+gustavopinheiro_1999@hotmail.com
+
 
 ## Project Setup
 
