@@ -1,6 +1,6 @@
 # ProdTask
 
-ProdTask is a robust project management and productivity tool that combines the power of Kanban with time tracking. This tool was developed using Nest JS and Vue.
+ProdTask is a project management and productivity tool that combines the power of Kanban with time tracking. This tool was developed using Nest JS and Vue.
 
 ## Features
 
