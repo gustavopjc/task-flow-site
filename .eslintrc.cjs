@@ -1,25 +1,50 @@
-/* eslint-env node */
-require('@rushstack/eslint-patch/modern-module-resolution')
-
 module.exports = {
   root: true,
-  'extends': [
-    'plugin:vue/vue3-essential',
-    'eslint:recommended',
-    '@vue/eslint-config-typescript',
-    '@vue/eslint-config-prettier/skip-formatting'
-  ],
-  overrides: [
-    {
-      files: [
-        'cypress/e2e/**/*.{cy,spec}.{js,ts,jsx,tsx}'
-      ],
-      'extends': [
-        'plugin:cypress/recommended'
-      ]
-    }
-  ],
+  env: {
+    node: true,
+  },
+  extends: ['plugin:vue/essential', '@vue/airbnb', '@vue/typescript/recommended'],
   parserOptions: {
-    ecmaVersion: 'latest'
+    ecmaVersion: 2020,
+  },
+  rules: {
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'comma-dangle': 'off',
+    'no-throw-literal': 'off',
+    semi: 'off',
+    'no-shadow': 'off',
+    indent: 'off',
+    'keyword-spacing': 'off',
+    'no-restricted-syntax': 'off',
+    'no-param-reassign': 'off',
+    'no-return-assign': 'off',
+    'no-empty-pattern': 'off',
+    'max-len': 'off',
+    'no-plusplus': 'off',
+    'import/no-unresolved': 'off',
+    'no-console': 'off',
+    'no-extend-native': 'off',
+    'no-useless-escape': 'off',
+    'vue/no-parsing-error': 'off',
+    'vue/no-unused-components': 'off',
+    camelcase: 'off',
+    'import/no-named-as-default-member': 'off',
+    'no-unused-expressions': 'off',
+    'import/extensions': 'off',
+    'no-unreachable': 'off',
+    'object-curly-newline': 'off',
+    'consistent-return': 'off',
+    'func-names': 'off',
+    'arrow-parens': 'off',
+    'no-underscore-dangle': 'off',
+    'implicit-arrow-linebreak': 'off',
+    'arrow-body-style': 'off',
+    'vue/multi-word-component-names': 'off',
+    'vue/no-mutating-props': 'off',
+    'vuejs-accessibility/form-control-has-label': 'off',
+    'vuejs-accessibility/click-events-have-key-events': 'off',
+    'vuejs-accessibility/alt-text': 'off',
+    'vuejs-accessibility/no-autofocus': 'off',
+    'import/no-extraneous-dependencies': 'off',
   }
 }
